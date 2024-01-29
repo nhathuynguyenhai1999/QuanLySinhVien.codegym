@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class StudentService {
@@ -68,5 +70,23 @@ public class StudentService {
     public Student getStudent(int i) {
         return students[i];
     }
+    public Student[] searchByName(String nametoSearch){
+        List<Student> foundStudents = new ArrayList<>();
+        String nameToSearch = null;
+        for (int i = 0; i < size; i++) {
+            students[i].getName();
+        }
 
+        throw new RuntimeException("Không tìm thấy sinh viên có tên '" + null + "'.");
+    }
+
+    public Student searchById(int idToSearch) {
+        for (int i = 0; i < size; i++) {
+            if (students[i].getId() == idToSearch) {
+                return students[i];
+            }
+        }
+
+        throw new RuntimeException("Không tìm thấy sinh viên có ID '" + idToSearch + "'.");
+    }
 }
