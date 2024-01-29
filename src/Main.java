@@ -5,7 +5,6 @@ public class Main {
         StudentManager manager = new StudentManager();
         manager.initData();
 
-
         Scanner scanner = new Scanner(System.in);
         int choice;
 
@@ -28,12 +27,12 @@ public class Main {
                 case 2:
                     manager.addStudentFromInput(scanner);
                     break;
-//                case 3:
-//                    manager.updateStudentFromInput(scanner);
-//                    break;
-               case 4:
-                   manager.deleteStudentFromInput(scanner);
-                   break;
+                case 3:
+                    manager.updateStudentFromInput(scanner);
+                    break;
+                case 4:
+                    manager.deleteStudentFromInput(scanner);
+                    break;
 //                case 5:
 //                    manager.searchByNameFromInput(scanner);
 //                    break;
