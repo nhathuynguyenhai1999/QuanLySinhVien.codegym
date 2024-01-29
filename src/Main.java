@@ -33,12 +33,12 @@ public class Main {
                 case 4:
                     manager.deleteStudentFromInput(scanner);
                     break;
-//                case 5:
-//                    manager.searchByNameFromInput(scanner);
-//                    break;
-//                case 6:
-//                    manager.searchByIdFromInput(scanner);
-//                    break;
+                case 5:
+                    manager.searchByNameFromInput(scanner);
+                    break;
+                case 6:
+                    manager.searchByIdFromInput(scanner);
+                    break;
                 case 0:
                     System.out.println("Thoát chương trình.");
                     break;
